@@ -8,12 +8,13 @@ THIS PROJECT IS IN ACTIVE DEVELOPMENT
   - [iPhone 6](#iphone-6)
   - [Nexus 5](#nexus-5)
  - [File Structure of App](#file-structure-of-app)
-
+ 
+<!--
 ## App Preview
 
 ### iPhone 6
 
-<!-- GIF of iOS app -->
+<!-- GIF of iOS app
 <img src="resources/gifs/ios.gif" alt="iOS"><br>-->
 <!-- images of iOS app
 <img src="resources/screenshots/iphone/1.png" alt="Sessions" width="425”>-->
