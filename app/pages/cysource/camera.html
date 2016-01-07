@@ -1,0 +1,17 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+    <icon menu></icon>
+  </button>
+  <ion-title>CySource</ion-title>
+</ion-navbar>
+
+<ion-content ng-controller="ExampleController" padding="true">
+    <button class="button button-full button-assertive" ng-click="takePhoto()">
+        Take Photo
+    </button>
+    <button class="button button-full button-assertive" ng-click="choosePhoto()">
+        Choose Photo
+    </button>
+<img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+</ion-content>

@@ -1,0 +1,19 @@
+
+<ion-navbar *navbar>
+  <ion-title>Event Details</ion-title>
+</ion-navbar>
+
+<ion-content padding>
+  <h1>{{session.name}}</h1>
+
+  <p>
+    {{session.timeStart}} - {{session.timeEnd}}
+  </p>
+
+  <p>{{session.location}}</p>
+
+  <p>{{session.description}}</p>
+  
+  <a href="http://google.com"><button class="button-default button-block">Get Directions</button></a>
+  <a href="http://google.com"><button class="button-secondary button-block">Add To Calendar</button></a>
+</ion-content>
