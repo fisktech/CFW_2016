@@ -14,18 +14,18 @@ THIS PROJECT IS IN ACTIVE DEVELOPMENT
 ### iPhone 6
 
 <!-- GIF of iOS app -->
-<img src="resources/gifs/ios.gif" alt="iOS"><br>—->
+<img src="resources/gifs/ios.gif" alt="iOS"><br>-->
 <!-- images of iOS app
-<img src="resources/screenshots/iphone/1.png" alt="Sessions" width="425”>—->
+<img src="resources/screenshots/iphone/1.png" alt="Sessions" width="425”>-->
 
 
 
 ### Nexus 5
 
 <!-- GIF of MD app
-<img src="resources/gifs/nexus.gif" alt="MD"><br>—->
+<img src="resources/gifs/nexus.gif" alt="MD"><br>-->
 <!-- GIF of MD app 
-<img src="resources/screenshots/nexus/1.png" alt="Sessions" width="425”>—->
+<img src="resources/screenshots/nexus/1.png" alt="Sessions" width="425”>-->
 
 
 
