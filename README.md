@@ -19,7 +19,7 @@ THIS PROJECT IS IN ACTIVE DEVELOPMENT
 <!-- images of iOS app
 <img src="resources/screenshots/iphone/1.png" alt="Sessions" width="425”>-->
 
-
+<!--
 
 ### Nexus 5
 
