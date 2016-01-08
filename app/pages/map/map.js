@@ -1,5 +1,6 @@
 import {Page} from 'ionic/ionic';
 import {ConferenceData} from '../../providers/conference-data';
+import {MapModalPage} from '../modals/map/map-modal';
 
 
 @Page({
@@ -8,9 +9,12 @@ import {ConferenceData} from '../../providers/conference-data';
 export class MapPage {
   constructor(confData: ConferenceData) {
     this.confData = confData;
+    this.nav = nav;
   }
+    
 
   onPageLoaded() {
+      
     this.confData.getMap().then(mapData => {
       let mapEle = document.getElementById('map');
 

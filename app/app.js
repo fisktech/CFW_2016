@@ -18,13 +18,14 @@ class ConferenceApp {
     confData.load();
 
     // We plan to add auth to only show the login page if not logged in
-    this.root = TutorialPage;
+    this.root = TabsPage;
 
     // create an list of pages that can be navigated to from the left menu
     // the left menu only works after login
     // the login page disables the left menu
     this.pages = [
-      { title: 'Schedule', component: TabsPage, icon: 'calendar' },{ title: 'App Tutorial', component: TutorialPage, icon: 'help-circle' },
+      { title: 'Schedule', component: TabsPage, icon: 'calendar' },
+        //{ title: 'App Tutorial', component: TutorialPage, icon: 'help-circle' },
       { title: 'App Credits', component: AboutPage, icon: 'information-circle' },
     ];
   }

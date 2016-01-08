@@ -1,7 +1,7 @@
 import {IonicApp, Page, Modal, Alert, NavController} from 'ionic/ionic';
 import {ConferenceData} from '../../providers/conference-data';
 import {UserData} from '../../providers/user-data';
-import {ScheduleFilterPage} from '../schedule-filter/schedule-filter';
+import {ScheduleModalPage} from '../modals/schedule/schedule-modal';
 import {SessionDetailPage} from '../session-detail/session-detail';
 
 
@@ -31,6 +31,7 @@ export class SchedulePage {
     this.app.setTitle('Schedule');
   }
 
+  //PULL SESSION DATA FROM JSON FILE ON PAGE LOAD
   updateSchedule() {
     this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).then(data => {
       this.shownSessions = data.shownSessions;
@@ -38,17 +39,13 @@ export class SchedulePage {
     });
   }
 
-  presentFilter() {
-    let modal = Modal.create(ScheduleFilterPage, this.excludeTracks);
-    modal.onDismiss(data => {
-      if (data) {
-        this.excludeTracks = data;
-        this.updateSchedule();
-      }
-    });
+  //SHOW MODAL WITH PAGE SPECIFIC INFORMATION
+  showHelp() {
+    let modal = Modal.create(ScheduleModalPage);
     this.nav.present(modal);
   }
 
+  //WHEN USER TAPS ON SESSION, SHOW THEM DETAILS
   goToSessionDetail(sessionData) {
     // go to the session detail page
     // and pass in the session data
